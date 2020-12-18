@@ -1,0 +1,156 @@
+body {
+    margin: 0px;
+    background-image: url(../assets/main_bg.png);
+    background-size: cover;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.header {
+    // background-color: red;
+    height: 100px;
+    width: 1035px;
+    min-width: 770px;
+    margin: auto;
+    position: relative;
+    &-name {
+        position: absolute;
+        margin: auto;
+        left: 0px;
+        bottom: 40px;
+        width: 100px;
+        height: 20px;
+        font-size: 20px;
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        & span {
+            color: #2eca7f;
+        }
+    }
+    &-navbar {
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        right: 0px;
+        bottom: 40px;
+        font-size: 15px;
+        color: darken($color: gray, $amount: 5%);
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        // background-color: green;
+    }
+}
+
+.body {
+    height: 100vh;
+    // background-color: blue;
+    display: flex;
+    justify-content: center;
+    &-home {
+        height: 570px;
+        width: 1035px;
+        // background-color: red;
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+        // min-width: 992px;
+        // display: flex;
+        // flex-direction: column;
+        &_top {
+            height: 305px;
+            background-color: #2eca7f;
+            background-image: url(../assets/sp_main_bg.png);
+            background-size: cover;
+            position: relative;
+            &_photo {
+                width: 280px;
+                height: 280px;
+                background-color: green;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                background-image: url(../assets/photo.png);
+                background-size: cover;
+                box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    transform: translateY(-9px);
+                    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+                }
+            }
+            &_contact {
+                width: 640px;
+                height: 200px;
+                position: absolute;
+                top: 56px;
+                right: 23px;
+                // background-color: blue;
+                &-name {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 34px;
+                    font-family: 'Montserrat', Helvetica, sans-serif;
+                    margin: 30px 0px 0px 0px;
+                }
+                &-job {
+                    color: #fff;
+                    font-size: 18px;
+                    text-align: center;
+                    font-family: 'Montserrat', Helvetica, sans-serif;
+                    margin: 12px;
+                }
+                &-media {
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    &-twitter {
+                        height: 36px;
+                        width: 36px;
+                        background-color: white;
+                        border-radius: 100em;
+                        margin: 3px;
+                        display: flex;
+                        text-decoration: none;
+                        color: darken($color: gray, $amount: 5%);
+                        &_icon {
+                            margin: auto;
+                        }
+                    }
+                    &-facebook {
+                        height: 36px;
+                        width: 36px;
+                        background-color: white;
+                        border-radius: 100em;
+                        margin: 3px;
+                        display: flex;
+                        text-decoration: none;
+                        color: darken($color: gray, $amount: 5%);
+                        &_icon {
+                            margin: auto;
+                        }
+                    }
+                    &-instagram {
+                        height: 36px;
+                        width: 36px;
+                        background-color: white;
+                        border-radius: 100em;
+                        margin: 3px;
+                        display: flex;
+                        text-decoration: none;
+                        color: darken($color: gray, $amount: 5%);
+                        &_icon {
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+        &_bottom {
+            height: 265px;
+            background-color: white;
+        }
+    }
+}

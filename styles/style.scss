@@ -19,7 +19,7 @@ h1 {
     &-name {
         position: absolute;
         margin: auto;
-        left: 0px;
+        left: 15px;
         bottom: 40px;
         width: 100px;
         height: 20px;
@@ -34,11 +34,16 @@ h1 {
         display: flex;
         justify-content: space-evenly;
         position: absolute;
-        right: 0px;
+        right: -17px;
         bottom: 40px;
         font-size: 15px;
-        color: darken($color: gray, $amount: 5%);
+        color: lighten($color: gray, $amount: 10%);
         font-family: 'Montserrat', Helvetica, sans-serif;
+        & div {
+            &:hover {
+                cursor: pointer;
+            }
+        }
         // background-color: green;
     }
 }
@@ -49,15 +54,13 @@ h1 {
     display: flex;
     justify-content: center;
     &-home {
+        display: none;
         height: 570px;
         width: 1035px;
         // background-color: red;
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
-        // min-width: 992px;
-        // display: flex;
-        // flex-direction: column;
         &_top {
             height: 305px;
             background-color: #2eca7f;
@@ -75,6 +78,7 @@ h1 {
                 background-size: cover;
                 box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
                 transition: all 0.3s ease-in-out;
+                z-index: 100;
                 &:hover {
                     transform: translateY(-9px);
                     box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
@@ -114,7 +118,11 @@ h1 {
                         margin: 3px;
                         display: flex;
                         text-decoration: none;
-                        color: darken($color: gray, $amount: 5%);
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+                        }
+                        color: darken($color: rgb(165, 163, 163), $amount: 1%);
                         &_icon {
                             margin: auto;
                         }
@@ -127,7 +135,11 @@ h1 {
                         margin: 3px;
                         display: flex;
                         text-decoration: none;
-                        color: darken($color: gray, $amount: 5%);
+                        color: darken($color: rgb(165, 163, 163), $amount: 1%);
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+                        }
                         &_icon {
                             margin: auto;
                         }
@@ -140,7 +152,11 @@ h1 {
                         margin: 3px;
                         display: flex;
                         text-decoration: none;
-                        color: darken($color: gray, $amount: 5%);
+                        color: darken($color: rgb(165, 163, 163), $amount: 1%);
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+                        }
                         &_icon {
                             margin: auto;
                         }
@@ -151,6 +167,182 @@ h1 {
         &_bottom {
             height: 265px;
             background-color: white;
+            position: relative;
+            &-content {
+                width: 1035px;
+                height: 233px;
+                // background-color: yellow;
+                position: absolute;
+                bottom: 0px;
+                &-frame {
+                    height: 156px;
+                    width: 962px;
+                    // background-color: red;
+                    margin: 20px auto;
+                    display: flex;
+                    position: relative;
+                    &_intro {
+                        width: 451px;
+                        height: 128px;
+                        // background-color: green;
+                        position: absolute;
+                        left: 15px;
+                        font-family: 'Montserrat', Helvetica, sans-serif;
+                        & h1 {
+                            font-size: 22px;
+                            & span {
+                                color: #2eca7f;
+                            }
+                        }
+                        & p {
+                            line-height: 1.5em;
+                            font-size: 15px;
+                        }
+                    }
+                    &_contact {
+                        width: 380px;
+                        height: 156px;
+                        // background-color: red;
+                        position: absolute;
+                        right: 35px;
+                        font-family: 'Montserrat', Helvetica, sans-serif;
+                        &-items {
+                            list-style: none;
+                            // background-color: blue;
+                            padding: 0px;
+                            margin: 0px;
+                            position: relative;
+                            & li {
+                                line-height: 2.0em;
+                                font-size: 14px;
+                            }
+                            &_value {
+                                position: absolute;
+                                left: 120px;
+                                color: darken($color: rgb(182, 172, 172), $amount: 5%);
+                                & a {
+                                    text-decoration: none;
+                                    color: #2eca7f;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
+    }
+    &-resume {
+        display: block;
+        width: 1035px;
+        height: 960px;
+        // background-color: red;
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+        &_top {
+            width: 1035px;
+            height: 125px;
+            background-color: #2eca7f;
+            background-image: url(../assets/sp_main_bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 44px;
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        &_bottom {
+            width: 1035px;
+            height: 835px;
+            background-color: green;
+            display: flex;
+            &-content {
+                width: 950px;
+                height: 756px;
+                background-color: red;
+                margin: 30px auto;
+                display: flex;
+                flex-wrap: wrap;
+                &-education {
+                    width: 475px;
+                    height: 550px;
+                    background-color: gray;
+                    &-title {
+                        width: 451px;
+                        height: 31px;
+                        background-color: white;
+                        margin: 5px auto;
+                        display: flex;
+                        align-items: center;
+                        font-size: 20px;
+                        font-style: bold;
+                    }
+                    &-progress {
+                        width: 451px;
+                        height: 460px;
+                        background-color: white;
+                        margin: 30px auto;
+                        display: flex;
+                        flex-direction: column;
+                        &-element {
+                            width: 429px;
+                            height: 130px;
+                            background-color: black;
+                            margin: 10px auto;
+                            position: relative;
+                            &_circle {
+                                width: 10px;
+                                height: 10px;
+                                background-color: white;
+                                border-radius: 100em;
+                                position: absolute;
+                                left: -18px;
+                                top: 15px;
+                                border: 2px solid red;
+                                &::after {
+                                    content: '';
+                                    width: 6px;
+                                    height: 2px;
+                                    background-color: red;
+                                    // give the position of content
+                                    position: absolute;
+                                    left: 10px;
+                                    top: 3.5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-experience {
+                    width: 475px;
+                    height: 550px;
+                    background-color: darken($color: gray, $amount: 20);
+                    flex: none;
+                }
+                &_graph {
+                    height: 206px;
+                    width: 950px;
+                    background-color: darken($color: gray, $amount: 30);
+                }
+            }
+        }
+    }
+    &-services {
+        display: none;
+        height: 725px;
+        width: 1035px;
+        background-color: red;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+    &-blog {
+        display: none;
+    }
+    &-contact {
+        display: none;
     }
 }

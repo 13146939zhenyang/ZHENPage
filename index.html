@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <script src="/scripts/script.js"></script>
 </head>
 
 <body>
@@ -16,42 +17,115 @@
             <span>Yang</span>
         </div>
         <div class="header-navbar">
-            <div>Home</div>
-            <div>Resume</div>
-            <div>Services</div>
-            <div>Blog</div>
-            <div>Contact</div>
+            <div onclick="home()">Home</div>
+            <div onclick="resume()">Resume</div>
+            <div onclick="services()">Services</div>
+            <div onclick="blog()">Blog</div>
+            <div onclick="contact()">Contact</div>
         </div>
     </header>
-    <section class="body">
-        <div class="body-home">
-            <div class="body-home_top">
-                <div class="body-home_top_photo"></div>
-                <div class="body-home_top_contact">
-                    <div class="body-home_top_contact-name">
+    <div class=" body ">
+        <section class="body-home">
+            <div class="body-home_top ">
+                <div class="body-home_top_photo "></div>
+                <div class="body-home_top_contact ">
+                    <div class="body-home_top_contact-name ">
                         <h1>
                             Zhen Yang
                         </h1>
                     </div>
-                    <div class="body-home_top_contact-job">Frontend-developer</div>
-                    <div class="body-home_top_contact-media">
-                        <a href="https://www.google.com" class="body-home_top_contact-media-twitter">
-                            <i class="fab fa-twitter fa-sm body-home_top_contact-media-twitter_icon"></i>
+                    <p class="body-home_top_contact-job ">Frontend-developer</p>
+                    <div class="body-home_top_contact-media ">
+                        <a href="https://www.google.com " class="body-home_top_contact-media-twitter ">
+                            <i class="fab fa-twitter fa-sm body-home_top_contact-media-twitter_icon "></i>
                         </a>
-                        <a href="https://www.google.com" class="body-home_top_contact-media-facebook">
-                            <i class="fab fa-facebook-f fa-sm body-home_top_contact-media-facebook_icon"></i>
+                        <a href="https://www.google.com " class="body-home_top_contact-media-facebook ">
+                            <i class="fab fa-facebook-f fa-sm body-home_top_contact-media-facebook_icon "></i>
                         </a>
-                        <a href="https://www.google.com" class="body-home_top_contact-media-instagram">
-                            <i class="fab fa-instagram  fa-sm body-home_top_contact-media-instagram_icon"></i>
+                        <a href="https://www.google.com " class="body-home_top_contact-media-instagram ">
+                            <i class="fab fa-instagram fa-sm body-home_top_contact-media-instagram_icon "></i>
                         </a>
 
 
                     </div>
                 </div>
             </div>
-            <div class="body-home_bottom"></div>
-        </div>
-    </section>
+            <div class="body-home_bottom ">
+                <div class="body-home_bottom-content">
+                    <div class="body-home_bottom-content-frame">
+                        <div class="body-home_bottom-content-frame_intro">
+                            <h1>About <span>me</span></h1>
+                            <p>
+                                Hello! I’m Zhen Yang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+                        </div>
+                        <div class="body-home_bottom-content-frame_contact">
+                            <ul class="body-home_bottom-content-frame_contact-items">
+                                <li>
+                                    <span class="body-home_bottom-content-frame_contact-items_key">Age</span>
+                                    <span class="body-home_bottom-content-frame_contact-items_value">26</span>
+                                </li>
+                                <li>
+                                    <span class="body-home_bottom-content-frame_contact-items_key">Residence</span>
+                                    <span class="body-home_bottom-content-frame_contact-items_value">China</span>
+                                </li>
+                                <li>
+                                    <span class="body-home_bottom-content-frame_contact-items_key">Address</span>
+                                    <span class="body-home_bottom-content-frame_contact-items_value">Iglu Central Park</span>
+                                </li>
+                                <li>
+                                    <span class="body-home_bottom-content-frame_contact-items_key">E-mail</span>
+                                    <span class="body-home_bottom-content-frame_contact-items_value">
+                                        <a href="mailto:email@example.com">yangzhenuts@gmail.com</a></span>
+                                </li>
+                                <li>
+                                    <span class="body-home_bottom-content-frame_contact-items_key">Phone</span>
+                                    <span class="body-home_bottom-content-frame_contact-items_value">+61452159381</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="body-resume">
+            <div class="body-resume_top">
+                Resume
+            </div>
+            <div class="body-resume_bottom">
+                <div class="body-resume_bottom-content">
+                    <div class="body-resume_bottom-content-education">
+                        <div class="body-resume_bottom-content-education-title">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="body-resume_bottom-content-education-progress">
+                            <div class="body-resume_bottom-content-education-progress-element">
+                                <div class="body-resume_bottom-content-education-progress-element_circle"></div>
+                                <div class="body-resume_bottom-content-education-progress-element_content"></div>
+                            </div>
+                            <div class="body-resume_bottom-content-education-progress-element">
+                                <div class="body-resume_bottom-content-education-progress-element_circle"></div>
+                                <div class="body-resume_bottom-content-education-progress-element_content"></div>
+                            </div>
+                            <div class="body-resume_bottom-content-education-progress-element">
+                                <div class="body-resume_bottom-content-education-progress-element_circle"></div>
+                                <div class="body-resume_bottom-content-education-progress-element_content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-resume_bottom-content-experience"></div>
+                    <div class="body-resume_bottom-content_graph">
+                        <div class="body-resume_bottom-content_graph-design"></div>
+                        <div class="body-resume_bottom-content_graph-coding"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="body-services">3</section>
+        <section class="body-blog">4</section>
+        <section class="body-contact">5</section>
+    </div>
 </body>
 
 </html>

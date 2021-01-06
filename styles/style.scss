@@ -256,25 +256,25 @@ h1 {
             font-weight: bold;
         }
         &_bottom {
+            background-color: white;
             width: 1035px;
             height: 835px;
-            background-color: green;
             display: flex;
             &-content {
+                // background-color: red;
                 width: 950px;
                 height: 756px;
-                background-color: red;
                 margin: 30px auto;
                 display: flex;
                 flex-wrap: wrap;
                 &-education {
+                    // background-color: gray;
                     width: 475px;
                     height: 550px;
-                    background-color: gray;
                     &-title {
+                        background-color: white;
                         width: 451px;
                         height: 31px;
-                        background-color: white;
                         margin: 5px auto;
                         display: flex;
                         align-items: center;
@@ -282,36 +282,51 @@ h1 {
                         font-style: bold;
                     }
                     &-progress {
+                        background-color: white;
                         width: 451px;
                         height: 460px;
-                        background-color: white;
                         margin: 30px auto;
                         display: flex;
                         flex-direction: column;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            width: 2px;
+                            height: 460px;
+                            background-color: lighten($color: gray, $amount: 40%);
+                            position: absolute;
+                            top: -5px;
+                            left: 1px;
+                        }
                         &-element {
+                            background-color: white;
                             width: 429px;
                             height: 130px;
-                            background-color: black;
-                            margin: 10px auto;
+                            margin: 10px 20px auto;
+                            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+                            border-left: 2px solid #2eca7f;
                             position: relative;
+                            &:hover {
+                                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+                            }
                             &_circle {
-                                width: 10px;
-                                height: 10px;
                                 background-color: white;
+                                width: 8px;
+                                height: 8px;
                                 border-radius: 100em;
                                 position: absolute;
-                                left: -18px;
-                                top: 15px;
-                                border: 2px solid red;
+                                left: -26px;
+                                top: 20px;
+                                border: 2px solid #2eca7f;
                                 &::after {
+                                    background-color: #2eca7f;
                                     content: '';
-                                    width: 6px;
+                                    width: 14px;
                                     height: 2px;
-                                    background-color: red;
                                     // give the position of content
                                     position: absolute;
                                     left: 10px;
-                                    top: 3.5px;
+                                    top: 3px;
                                 }
                             }
                         }

@@ -268,8 +268,9 @@ h1 {
   margin: 5px auto;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 19px;
   font-style: bold;
+  font-family: "Montserrat", Helvetica, sans-serif;
 }
 .body-resume_bottom-content-education-progress {
   background-color: white;
@@ -297,6 +298,7 @@ h1 {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   border-left: 2px solid #2eca7f;
   position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
 }
 .body-resume_bottom-content-education-progress-element:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
@@ -320,13 +322,130 @@ h1 {
   left: 10px;
   top: 3px;
 }
+.body-resume_bottom-content-education-progress-element_title {
+  margin: 15px 0px 0px 20px;
+  font-size: 16px;
+}
+.body-resume_bottom-content-education-progress-element_time {
+  margin: 6px 0px 0px 20px;
+  font-size: 12px;
+  color: #2eca7f;
+  position: relative;
+}
+.body-resume_bottom-content-education-progress-element_time::after {
+  content: "";
+  width: 1.5px;
+  height: 14px;
+  background-color: #cdcdcd;
+  position: absolute;
+  left: 38px;
+}
+.body-resume_bottom-content-education-progress-element_time span {
+  color: #9e9e9e;
+  margin: 0px 0px 0px 20px;
+}
+.body-resume_bottom-content-education-progress-element_detail {
+  margin: 0px;
+  font-size: 15px;
+  margin: 10px 0px 0px 20px;
+  line-height: 1.5em;
+}
 .body-resume_bottom-content-experience {
   width: 475px;
   height: 550px;
-  background-color: #4d4d4d;
-  flex: none;
+  width: 475px;
+  height: 550px;
 }
-.body-resume_bottom-content_graph {
+.body-resume_bottom-content-experience-title {
+  background-color: white;
+  width: 451px;
+  height: 31px;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  font-style: bold;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+.body-resume_bottom-content-experience-progress {
+  background-color: white;
+  width: 451px;
+  height: 460px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.body-resume_bottom-content-experience-progress::before {
+  content: "";
+  width: 2px;
+  height: 460px;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: -5px;
+  left: 1px;
+}
+.body-resume_bottom-content-experience-progress-element {
+  background-color: white;
+  width: 429px;
+  height: 130px;
+  margin: 10px 20px auto;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid #2eca7f;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+.body-resume_bottom-content-experience-progress-element:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-experience-progress-element_circle {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 100em;
+  position: absolute;
+  left: -26px;
+  top: 20px;
+  border: 2px solid #2eca7f;
+}
+.body-resume_bottom-content-experience-progress-element_circle::after {
+  background-color: #2eca7f;
+  content: "";
+  width: 14px;
+  height: 2px;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+.body-resume_bottom-content-experience-progress-element_title {
+  margin: 15px 0px 0px 20px;
+  font-size: 16px;
+}
+.body-resume_bottom-content-experience-progress-element_time {
+  margin: 6px 0px 0px 20px;
+  font-size: 12px;
+  color: #2eca7f;
+  position: relative;
+}
+.body-resume_bottom-content-experience-progress-element_time::after {
+  content: "";
+  width: 1.5px;
+  height: 14px;
+  background-color: #cdcdcd;
+  position: absolute;
+  left: 38px;
+}
+.body-resume_bottom-content-experience-progress-element_time span {
+  color: #9e9e9e;
+  margin: 0px 0px 0px 20px;
+}
+.body-resume_bottom-content-experience-progress-element_detail {
+  margin: 0px;
+  font-size: 15px;
+  margin: 10px 0px 0px 20px;
+  line-height: 1.5em;
+}
+.body-resume_bottom-content-graph {
   height: 206px;
   width: 950px;
   background-color: #343434;

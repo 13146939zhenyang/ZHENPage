@@ -40,8 +40,13 @@ h1 {
   color: #9a9a9a;
   font-family: "Montserrat", Helvetica, sans-serif;
 }
+.header-navbar div {
+  transition: all 1s ease;
+  padding-bottom: 10px;
+}
 .header-navbar div:hover {
   cursor: pointer;
+  color: black;
 }
 
 .body {
@@ -49,7 +54,7 @@ h1 {
   justify-content: center;
 }
 .body-home {
-  display: none;
+  display: display;
   height: 570px;
   width: 1035px;
   border-radius: 1em;
@@ -220,12 +225,12 @@ h1 {
   color: #2eca7f;
 }
 .body-resume {
-  display: block;
+  display: none;
   width: 1035px;
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 500px;
+  margin-bottom: 50px;
 }
 .body-resume_top {
   width: 1035px;
@@ -456,10 +461,10 @@ h1 {
   color: #2eca7f;
 }
 .body-resume_bottom-content-graph-content {
-  height: 1000px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   padding-top: 5px;
+  padding-bottom: 10px;
   position: relative;
 }
 .body-resume_bottom-content-graph-content-title {
@@ -478,7 +483,6 @@ h1 {
   margin-top: -80px;
 }
 .body-resume_bottom-content-graph-content-tools {
-  height: 100px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
@@ -500,6 +504,58 @@ h1 {
 }
 .body-resume_bottom-content-graph-content-tools-xd::after {
   content: "Adobe XD";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-agile {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/tools/agile.svg");
+  background-size: contain;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-agile:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-agile::after {
+  content: "Agile";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-git {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/tools/git.svg");
+  background-size: contain;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-git:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-git::after {
+  content: "Git";
   position: absolute;
   width: 70px;
   bottom: -20px;
@@ -549,7 +605,380 @@ h1 {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 .body-resume_bottom-content-graph-content-tools-css3::after {
-  content: "Html5";
+  content: "Css3";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-sass {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/sass.png");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-sass:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-sass::after {
+  content: "Sass";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-bootstrap {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/bootstrap.png");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px black;
+}
+.body-resume_bottom-content-graph-content-tools-bootstrap:hover {
+  box-shadow: 0px 0px 8px 0px black;
+}
+.body-resume_bottom-content-graph-content-tools-bootstrap::after {
+  content: "Bootstrap";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-javascript {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/js.png");
+  background-size: contain;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-javascript:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-javascript::after {
+  content: "JavaScript";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-es6 {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/esix.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-es6:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-es6::after {
+  content: "Es6";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-typescript {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/typescript.png");
+  background-size: contain;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px black;
+}
+.body-resume_bottom-content-graph-content-tools-typescript:hover {
+  box-shadow: 0px 0px 8px 0px black;
+}
+.body-resume_bottom-content-graph-content-tools-typescript::after {
+  content: "TypeScript";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-csharp {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/csharp.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-csharp:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-csharp::after {
+  content: "C#";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-reactjs {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/react.svg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-reactjs:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-reactjs::after {
+  content: "React.js";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-redux {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  background-image: url("../assets/front-end/redux.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-redux:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-redux::after {
+  content: "Redux";
+  position: absolute;
+  width: 100px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-reduxsaga {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  background-image: url("../assets/front-end/redux-saga.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-reduxsaga:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-reduxsaga::after {
+  content: "Redux-Saga";
+  position: absolute;
+  width: 100px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-flexbox {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  background-image: url("../assets/front-end/flexbox.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-flexbox:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-flexbox::after {
+  content: "FlexBox";
+  position: absolute;
+  width: 100px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-uidesign {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  background-image: url("../assets/front-end/uiux.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-uidesign:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-uidesign::after {
+  content: "UI UX design";
+  position: absolute;
+  width: 100px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-jwt {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/JWT.png");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-jwt:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-jwt::after {
+  content: "JWT";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-oauth {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/oauth.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-oauth:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-oauth::after {
+  content: "Oauth";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-webpack {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/webpeck.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-webpack:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-webpack::after {
+  content: "WebPack";
   position: absolute;
   width: 70px;
   bottom: -20px;
@@ -583,19 +1012,786 @@ h1 {
   font-size: 12px;
   text-align: center;
 }
+.body-resume_bottom-content-graph-content-tools-database {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/db.png");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-database:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-database::after {
+  content: "Database";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-mongodb {
+  height: 50px;
+  width: 150px;
+  background-color: white;
+  background-image: url("../assets/back-end/mongo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-mongodb:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-mongodb::after {
+  content: "MongoDB";
+  position: absolute;
+  width: 170px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-mysql {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/mysql.svg");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-mysql:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-mysql::after {
+  content: "MySQL";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-restfulapi {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/restfulapi.svg");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-restfulapi:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-restfulapi::after {
+  content: "RESTful API";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-netcore {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  background-image: url("../assets/back-end/net.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-netcore:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-netcore::after {
+  content: ".NET Core";
+  position: absolute;
+  width: 100px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-postman {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/postman.jpg");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-postman:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-postman::after {
+  content: "Postman";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-swagger {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/swagger.png");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-swagger:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-swagger::after {
+  content: "Swagger";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-java {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/java.svg");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-java:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-java::after {
+  content: "Java";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-springboot {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  background-image: url("../assets/back-end/springboot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-springboot:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-springboot::after {
+  content: "Spring Boot";
+  position: absolute;
+  width: 120px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-docker {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/docker.svg");
+  background-size: cover;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-docker:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-docker::after {
+  content: "Docker";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-nodejs {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  background-image: url("../assets/back-end/nodejs.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-nodejs:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-nodejs::after {
+  content: "Node.js";
+  position: absolute;
+  width: 120px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-aws {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/back-end/aws.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-aws:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-aws::after {
+  content: "AWS";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
 .body-projects {
   display: none;
-  height: 725px;
   width: 1035px;
-  background-color: red;
   border-radius: 1em;
   overflow: hidden;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.body-projects_top {
+  height: 125px;
+  background-color: #2eca7f;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: bold;
+  background-image: url(../assets/sp_main_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.body-projects_mid {
+  width: 1035px;
+  height: 50px;
+  position: absolute;
+  top: 150px;
+  color: black;
+  display: flex;
+  font-size: 19px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  align-items: center;
+  padding-left: 45px;
+}
+.body-projects_mid span {
+  color: #2eca7f;
+}
+.body-projects_bottom {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 85px 20px 30px 20px;
+}
+.body-projects_bottom-project1 {
+  height: 280px;
+  width: 280px;
+  margin: 20px;
+  border-radius: 1em;
+  background-image: url("../assets/projects/p1.jpg");
+  background-size: contain;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 1s ease;
+}
+.body-projects_bottom-project1:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  background-size: 400px 400px;
+  background-position: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.body-projects_bottom-project1:hover::before {
+  content: "Bootstrap";
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 0.3em;
+  background-color: #076e21;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.body-projects_bottom-project1:hover::after {
+  content: "Project One";
+  font-family: "Montserrat", Helvetica, sans-serif;
+  bottom: -18px;
+  width: 280px;
+  height: 10px;
+  position: absolute;
+  text-align: center;
+}
+.body-projects_bottom-project2 {
+  height: 280px;
+  width: 280px;
+  margin: 20px;
+  border-radius: 1em;
+  background-image: url("../assets/projects/p2.jpg");
+  background-size: contain;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  position: relative;
+}
+.body-projects_bottom-project2:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  background-size: 400px 400px;
+  background-position: center;
+  cursor: pointer;
+}
+.body-projects_bottom-project2:hover::before {
+  content: "Sass";
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 0.3em;
+  background-color: #076e21;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.body-projects_bottom-project2:hover::after {
+  content: "Project Two";
+  font-family: "Montserrat", Helvetica, sans-serif;
+  bottom: -18px;
+  width: 280px;
+  height: 10px;
+  position: absolute;
+  text-align: center;
+}
+.body-projects_bottom-project3 {
+  height: 280px;
+  width: 280px;
+  margin: 20px;
+  border-radius: 1em;
+  background-image: url("../assets/projects/p3.jpg");
+  background-size: contain;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  position: relative;
+}
+.body-projects_bottom-project3:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  background-size: 400px 400px;
+  background-position: center;
+  cursor: pointer;
+}
+.body-projects_bottom-project3:hover::before {
+  content: "React";
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 0.3em;
+  background-color: #076e21;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.body-projects_bottom-project3:hover::after {
+  content: "Project Three";
+  font-family: "Montserrat", Helvetica, sans-serif;
+  bottom: -18px;
+  width: 280px;
+  height: 10px;
+  position: absolute;
+  text-align: center;
+}
+.body-projects_bottom-project4 {
+  height: 280px;
+  width: 280px;
+  margin: 20px;
+  border-radius: 1em;
+  background-image: url("../assets/projects/p4.jpg");
+  background-size: contain;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  position: relative;
+}
+.body-projects_bottom-project4:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  background-size: 400px 400px;
+  background-position: center;
+  cursor: pointer;
+}
+.body-projects_bottom-project4:hover::before {
+  content: "Vue";
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 0.3em;
+  background-color: #076e21;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.body-projects_bottom-project4:hover::after {
+  content: "Project Four";
+  font-family: "Montserrat", Helvetica, sans-serif;
+  bottom: -18px;
+  width: 280px;
+  height: 10px;
+  position: absolute;
+  text-align: center;
+}
+.body-projects_bottom-project5 {
+  height: 280px;
+  width: 280px;
+  margin: 20px;
+  border-radius: 1em;
+  background-image: url("../assets/projects/p5.jpg");
+  background-size: contain;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  position: relative;
+}
+.body-projects_bottom-project5:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  background-size: 400px 400px;
+  background-position: center;
+  cursor: pointer;
+}
+.body-projects_bottom-project5:hover::before {
+  content: "Design";
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 0.3em;
+  background-color: #076e21;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.body-projects_bottom-project5:hover::after {
+  content: "Project Five";
+  font-family: "Montserrat", Helvetica, sans-serif;
+  bottom: -18px;
+  width: 280px;
+  height: 10px;
+  position: absolute;
+  text-align: center;
+}
+.body-projects_bottom-project6 {
+  height: 280px;
+  width: 280px;
+  margin: 20px;
+  border-radius: 1em;
+  background-image: url("../assets/projects/p6.jpg");
+  background-size: contain;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  position: relative;
+  cursor: pointer;
+}
+.body-projects_bottom-project6:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  background-size: 400px 400px;
+  background-position: center;
+}
+.body-projects_bottom-project6:hover::before {
+  content: "React";
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 0.3em;
+  background-color: #076e21;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.body-projects_bottom-project6:hover::after {
+  content: "Project Six";
+  font-family: "Montserrat", Helvetica, sans-serif;
+  bottom: -18px;
+  width: 280px;
+  height: 10px;
+  position: absolute;
+  text-align: center;
 }
 .body-blog {
   display: none;
+  width: 1035px;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+.body-blog_top {
+  height: 125px;
+  background-color: #2eca7f;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: bold;
+  background-image: url(../assets/sp_main_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.body-blog_bottom {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  color: black;
+  font-size: 35px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.body-blog_bottom-title {
+  z-index: 1;
+}
+.body-blog_bottom-title span {
+  color: #2eca7f;
+}
+.body-blog_bottom-mask {
+  z-index: 0;
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  color: #f3f3f3;
+  background-color: transparent;
+  font-size: 50px;
 }
 .body-contact {
   display: none;
+  width: 1035px;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.body-contact_top {
+  height: 125px;
+  background-color: #2eca7f;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: bold;
+  background-image: url(../assets/sp_main_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.body-contact_bottom {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px 0px 20px;
+}
+.body-contact_bottom-detail {
+  width: 480px;
+  height: 495px;
+  margin: 35px 0px 35px 0px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+.body-contact_bottom-detail-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+.body-contact_bottom-detail-title span {
+  color: #2eca7f;
+}
+.body-contact_bottom-detail-content-map {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 180px;
+  background-color: black;
+}
+.body-contact_bottom-detail-content-list {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+.body-contact_bottom-detail-content-list-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 100em;
+  background-color: #fafafa;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2eca7f;
+  font-size: 18px;
+  line-height: 36px;
+}
+.body-contact_bottom-detail-content-form {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 400px;
+}
+.body-contact_bottom-detail-content-form-detail {
+  margin-bottom: 25px;
+  display: flex;
+  position: relative;
+}
+.body-contact_bottom-detail-content-form-detail-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  color: #2eca7f;
+}
+.body-contact_bottom-detail-content-form-detail-icon-comment {
+  width: 40px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  color: #2eca7f;
+}
+.body-contact_bottom-detail-content-form-detail-text {
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 100px;
+  min-height: 100%;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  box-shadow: none;
+  outline: none;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+.body-contact_bottom-detail-content-form-button {
+  background-color: #2eca7f;
+  color: #fff;
+  border: 0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.8;
+  padding: 0 1.5em;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.body-contact_bottom-detail-content-form-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

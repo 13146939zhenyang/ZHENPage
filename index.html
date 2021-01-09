@@ -9,6 +9,10 @@
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
     <script src="/scripts/script.js"></script>
+    <!-- google map -->
+    <script src="/scripts/google.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer></script>
 </head>
 
 <body>
@@ -161,10 +165,12 @@
                         <h3 class="body-resume_bottom-content-graph-title">Design & Coding <span>Skilles</span> </h3>
                         <div class="body-resume_bottom-content-graph-content">
                             <div class="body-resume_bottom-content-graph-content-design">
-                                <h3 class="body-resume_bottom-content-graph-content-title">Design</h3>
-                                <h3 class="body-resume_bottom-content-graph-content-mask">Design</h3>
+                                <h3 class="body-resume_bottom-content-graph-content-title">Design & Coding Management</h3>
+                                <h3 class="body-resume_bottom-content-graph-content-mask">Design & Coding Management</h3>
                                 <div class="body-resume_bottom-content-graph-content-tools">
                                     <div class="body-resume_bottom-content-graph-content-tools-xd"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-agile"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-git"></div>
                                 </div>
                             </div>
                             <div class="body-resume_bottom-content-graph-content-frontend">
@@ -172,7 +178,22 @@
                                 <h3 class="body-resume_bottom-content-graph-content-mask">Front-end</h3>
                                 <div class="body-resume_bottom-content-graph-content-tools">
                                     <div class="body-resume_bottom-content-graph-content-tools-html5"></div>
-                                    <div class="body-resume_bottom-content-graph-content-tools-html5"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-css3"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-sass"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-bootstrap"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-javascript"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-es6"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-typescript"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-csharp"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-reactjs"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-redux"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-reduxsaga"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-flexbox"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-uidesign"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-jwt"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-oauth"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-webpack"></div>
+
                                 </div>
                             </div>
                             <div class="body-resume_bottom-content-graph-content-backend">
@@ -180,6 +201,20 @@
                                 <h3 class="body-resume_bottom-content-graph-content-mask">Back-end</h3>
                                 <div class="body-resume_bottom-content-graph-content-tools">
                                     <div class="body-resume_bottom-content-graph-content-tools-expressjs"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-database"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-mongodb"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-jwt"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-mysql"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-restfulapi"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-netcore"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-csharp"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-postman"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-swagger"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-java"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-springboot"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-docker"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-nodejs"></div>
+                                    <div class="body-resume_bottom-content-graph-content-tools-aws"></div>
                                 </div>
                             </div>
                         </div>
@@ -189,9 +224,102 @@
 
             </div>
         </section>
-        <section class="body-projects">3</section>
-        <section class="body-blog">4</section>
-        <section class="body-contact">5</section>
+        <section class="body-projects">
+            <div class="body-projects_top">
+                Portfolio
+            </div>
+            <div class="body-projects_mid">
+                <h3>My <span>project</span></h3>
+            </div>
+            <div class="body-projects_bottom">
+                <div class="body-projects_bottom-project1"></div>
+                <div class="body-projects_bottom-project2"></div>
+                <div class="body-projects_bottom-project3"></div>
+                <div class="body-projects_bottom-project4"></div>
+                <div class="body-projects_bottom-project5"></div>
+                <div class="body-projects_bottom-project6"></div>
+            </div>
+        </section>
+        <section class="body-blog">
+            <div class="body-blog_top">Blog</div>
+            <div class="body-blog_bottom">
+                <div class="body-blog_bottom-title">Coming <span>soon</span> ... <span>...</span></div>
+                <div class="body-blog_bottom-mask">Coming soon... ...</div>
+            </div>
+        </section>
+        <section class="body-contact">
+            <div class="body-contact_top">Contact</div>
+            <div class="body-contact_bottom">
+                <div class="body-contact_bottom-detail">
+                    <div class="body-contact_bottom-detail-title">
+                        Get in <span>Touch</span>
+                    </div>
+                    <div class="body-contact_bottom-detail-content">
+                        <div class="body-contact_bottom-detail-content-map"></div>
+                        <div class="body-contact_bottom-detail-content-list">
+                            <div class="body-contact_bottom-detail-content-list-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-list-text">Sydney,Australia</div>
+                        </div>
+                        <div class="body-contact_bottom-detail-content-list">
+                            <div class="body-contact_bottom-detail-content-list-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-list-text">yangzhenuts@gmail.com</div>
+                        </div>
+                        <div class="body-contact_bottom-detail-content-list">
+                            <div class="body-contact_bottom-detail-content-list-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-list-text">+61 0452 159381</div>
+                        </div>
+                        <div class="body-contact_bottom-detail-content-list">
+                            <div class="body-contact_bottom-detail-content-list-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-list-text">Freelance Available</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-contact_bottom-detail">
+                    <div class="body-contact_bottom-detail-title">
+                        Contact <span>Form</span>
+                    </div>
+                    <div class="body-contact_bottom-detail-content">
+                        <div class="body-contact_bottom-detail-content-form">
+                            <div class="body-contact_bottom-detail-content-form-detail">
+                                <div class="body-contact_bottom-detail-content-form-detail-icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <input class="body-contact_bottom-detail-content-form-detail-text" type="text" name="name">
+                                </input>
+                                <div class="body-contact_bottom-detail-content-form-detail-underline"></div>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-form-detail">
+                                <div class="body-contact_bottom-detail-content-form-detail-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input class="body-contact_bottom-detail-content-form-detail-text" type="text" name="email">
+                                </input>
+
+                                <div class="body-contact_bottom-detail-content-form-detail-underline"></div>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-form-detail">
+                                <div class="body-contact_bottom-detail-content-form-detail-icon-comment">
+                                    <i class="fa fa-comment"></i>
+                                </div>
+                                <textarea class="body-contact_bottom-detail-content-form-detail-text" type="text" name="comment">
+                                </textarea>
+                                <div class="body-contact_bottom-detail-content-form-detail-underline"></div>
+                            </div>
+                            <div class="body-contact_bottom-detail-content-form-machine"></div>
+                            <input type="submit" value="SEND MESSAGE" class="body-contact_bottom-detail-content-form-button"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 

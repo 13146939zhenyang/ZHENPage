@@ -233,7 +233,7 @@ h1 {
     display: flex;
     justify-content: center;
     &-home {
-        display: none;
+        display: display;
         // height: 570px;
         width: 1035px;
         // background-color: red;
@@ -1908,7 +1908,7 @@ h1 {
         }
     }
     &-contact {
-        display: block;
+        display: none;
         // height: 570px;
         width: 1035px;
         border-radius: 1em;

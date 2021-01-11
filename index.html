@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZhenYang</title>
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="../ZHENPage/styles/style.css">
+    <!-- <link rel="stylesheet" href="../ZHENPage/styles/style.css"> -->
 
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="../ZHENPage/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../ZHENPage/node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
 
     <script src="/scripts/script.js"></script>
-    <script src="../ZHENPage/scripts/script.js"></script>
+    <!-- <script src="../ZHENPage/scripts/script.js"></script> -->
     <!-- google map -->
     <script src="/scripts/google.js"></script>
-    <script src="../ZHENPage/scripts/google.js"></script>
+    <!-- <script src="../ZHENPage/scripts/google.js"></script> -->
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer></script>
@@ -28,14 +28,24 @@
             <span>Yang</span>
         </div>
         <div class="header-navbar">
-            <div onclick="home()">Home</div>
-            <div onclick="resume()">Resume</div>
-            <div onclick="projects()">Projects</div>
-            <div onclick="blog()">Blog</div>
-            <div onclick="contact()">Contact</div>
+            <div class="header-navbar-item-home" onclick="home()">Home
+                <div class="header-navbar-item-home-line"></div>
+            </div>
+            <div class="header-navbar-item-resume" onclick="resume()">Resume
+                <div class="header-navbar-item-resume-line"></div>
+            </div>
+            <div class="header-navbar-item-projects" onclick="projects()">Projects
+                <div class="header-navbar-item-projects-line"></div>
+            </div>
+            <div class="header-navbar-item-blog" onclick="blog()">Blog
+                <div class="header-navbar-item-blog-line"></div>
+            </div>
+            <div class="header-navbar-item-contact" onclick="contact()">Contact
+                <div class="header-navbar-item-contact-line"></div>
+            </div>
         </div>
     </header>
-    <div class=" body " id="pageswitch">
+    <div class=" body ">
         <section class="body-home">
             <div class="body-home_top ">
                 <div class="body-home_top_photo "></div>
@@ -297,31 +307,40 @@
                         <div class="body-contact_bottom-detail-content-form">
                             <div class="body-contact_bottom-detail-content-form-detail">
                                 <div class="body-contact_bottom-detail-content-form-detail-icon">
-                                    <i class="fa fa-user"></i>
+                                    <i class=" fa fa-user "></i>
                                 </div>
-                                <input class="body-contact_bottom-detail-content-form-detail-text" type="text" name="name">
-                                </input>
-                                <div class="body-contact_bottom-detail-content-form-detail-underline"></div>
+                                <div class="body-contact_bottom-detail-content-form-detail-text " onclick="moveName() ">
+                                    <input class="body-contact_bottom-detail-content-form-detail-text-input " id="inputName" type="text " name="name" onkeyup="checkName()" onclick="checkName()"></input>
+                                    <div class="body-contact_bottom-detail-content-form-detail-text-placeholderName ">Full Name</div>
+                                    <div class="body-contact_bottom-detail-content-form-detail-text-toolTipName">Full Name is required!</div>
+                                </div>
+                                <div class="body-contact_bottom-detail-content-form-detail-underline "></div>
                             </div>
-                            <div class="body-contact_bottom-detail-content-form-detail">
-                                <div class="body-contact_bottom-detail-content-form-detail-icon">
-                                    <i class="fa fa-envelope"></i>
+                            <div class="body-contact_bottom-detail-content-form-detail ">
+                                <div class="body-contact_bottom-detail-content-form-detail-icon ">
+                                    <i class="fa fa-envelope "></i>
                                 </div>
-                                <input class="body-contact_bottom-detail-content-form-detail-text" type="text" name="email">
-                                </input>
+                                <div class="body-contact_bottom-detail-content-form-detail-text " onclick="moveEmail()">
+                                    <input class="body-contact_bottom-detail-content-form-detail-text-input" id="inputEmail" type="text " name="email " onkeyup="checkEmail()" onclick="checkEmail()">
+                                    <div class="body-contact_bottom-detail-content-form-detail-text-placeholderEmail ">Email Address</div>
+                                    <div class="body-contact_bottom-detail-content-form-detail-text-toolTipEmail ">Email is required!</div>
+                                </div>
 
-                                <div class="body-contact_bottom-detail-content-form-detail-underline"></div>
+                                <div class="body-contact_bottom-detail-content-form-detail-underline "></div>
                             </div>
-                            <div class="body-contact_bottom-detail-content-form-detail">
-                                <div class="body-contact_bottom-detail-content-form-detail-icon-comment">
-                                    <i class="fa fa-comment"></i>
+                            <div class="body-contact_bottom-detail-content-form-detail ">
+                                <div class="body-contact_bottom-detail-content-form-detail-icon-comment ">
+                                    <i class="fa fa-comment "></i>
                                 </div>
-                                <textarea class="body-contact_bottom-detail-content-form-detail-text" type="text" name="comment">
-                                </textarea>
-                                <div class="body-contact_bottom-detail-content-form-detail-underline"></div>
+                                <div class="body-contact_bottom-detail-content-form-detail-text " onclick="moveComment() ">
+                                    <textarea class="body-contact_bottom-detail-content-form-detail-text-input" id="inputComment" type="text" name="comment" onkeyup="checkComment()" onclick="checkComment()"></textarea>
+                                    <div class="body-contact_bottom-detail-content-form-detail-text-placeholderComment ">Message for Me</div>
+                                    <div class="body-contact_bottom-detail-content-form-detail-text-toolTipComment ">Message is required!</div>
+                                </div>
+                                <div class="body-contact_bottom-detail-content-form-detail-underline "></div>
                             </div>
-                            <div class="body-contact_bottom-detail-content-form-machine"></div>
-                            <input type="submit" value="SEND MESSAGE" class="body-contact_bottom-detail-content-form-button"></input>
+                            <div class="body-contact_bottom-detail-content-form-machine "></div>
+                            <input type="submit " value="SEND MESSAGE " class="body-contact_bottom-detail-content-form-button "></input>
                         </div>
                     </div>
                 </div>

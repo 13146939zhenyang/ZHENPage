@@ -1610,17 +1610,19 @@ h1 {
                     width: 280px;
                     margin: 0px;
                     height: 30px;
-                    background-color: #2eca7f;
-                    color: white;
+                    // background-color: #2eca7f;
+                    background: linear-gradient(0.65turn, #f7a854, #ebf8e1, #3f87a6);
+                    color: black;
                     bottom: -40px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: flex-start;
+                    justify-content: center;
                     align-items: center;
                     border-radius: 1em;
                     &-icon {
-                        margin-left: 20px;
+                        // margin-left: 20px;
                         margin-right: 10px;
+                        color: black;
                     }
                     &:hover {
                         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);

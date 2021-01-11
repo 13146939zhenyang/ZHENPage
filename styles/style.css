@@ -1533,9 +1533,10 @@ h1 {
   padding: 85px 20px 30px 20px;
 }
 .body-projects_bottom-project1 {
-  height: 280px;
+  height: 200px;
   width: 280px;
   margin: 20px;
+  margin-bottom: 100px;
   border-radius: 1em;
   background-image: url("../assets/projects/p1.jpg");
   background-repeat: no-repeat;
@@ -1543,6 +1544,27 @@ h1 {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: all 1s ease;
+}
+.body-projects_bottom-project1-github {
+  position: absolute;
+  width: 280px;
+  margin: 0px;
+  height: 30px;
+  background-color: #2eca7f;
+  color: white;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1em;
+}
+.body-projects_bottom-project1-github-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.body-projects_bottom-project1-github:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 .body-projects_bottom-project1:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
@@ -1567,22 +1589,44 @@ h1 {
 .body-projects_bottom-project1:hover::after {
   content: "Project One";
   font-family: "Montserrat", Helvetica, sans-serif;
-  bottom: -18px;
+  bottom: -58px;
   width: 100%;
   height: 10px;
   position: absolute;
   text-align: center;
 }
 .body-projects_bottom-project2 {
-  height: 280px;
+  height: 200px;
   width: 280px;
   margin: 20px;
+  margin-bottom: 100px;
   border-radius: 1em;
   background-image: url("../assets/projects/p2.jpg");
   background-size: contain;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
   position: relative;
+}
+.body-projects_bottom-project2-github {
+  position: absolute;
+  width: 280px;
+  margin: 0px;
+  height: 30px;
+  background-color: #2eca7f;
+  color: white;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1em;
+}
+.body-projects_bottom-project2-github-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.body-projects_bottom-project2-github:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 .body-projects_bottom-project2:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
@@ -1607,22 +1651,44 @@ h1 {
 .body-projects_bottom-project2:hover::after {
   content: "Project Two";
   font-family: "Montserrat", Helvetica, sans-serif;
-  bottom: -18px;
+  bottom: -58px;
   width: 280px;
   height: 10px;
   position: absolute;
   text-align: center;
 }
 .body-projects_bottom-project3 {
-  height: 280px;
+  height: 200px;
   width: 280px;
   margin: 20px;
+  margin-bottom: 100px;
   border-radius: 1em;
   background-image: url("../assets/projects/p3.jpg");
   background-size: contain;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
   position: relative;
+}
+.body-projects_bottom-project3-github {
+  position: absolute;
+  width: 280px;
+  margin: 0px;
+  height: 30px;
+  background-color: #2eca7f;
+  color: white;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1em;
+}
+.body-projects_bottom-project3-github-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.body-projects_bottom-project3-github:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 .body-projects_bottom-project3:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
@@ -1647,22 +1713,44 @@ h1 {
 .body-projects_bottom-project3:hover::after {
   content: "Project Three";
   font-family: "Montserrat", Helvetica, sans-serif;
-  bottom: -18px;
+  bottom: -58px;
   width: 280px;
   height: 10px;
   position: absolute;
   text-align: center;
 }
 .body-projects_bottom-project4 {
-  height: 280px;
+  height: 200px;
   width: 280px;
   margin: 20px;
+  margin-bottom: 100px;
   border-radius: 1em;
   background-image: url("../assets/projects/p4.jpg");
   background-size: contain;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
   position: relative;
+}
+.body-projects_bottom-project4-github {
+  position: absolute;
+  width: 280px;
+  margin: 0px;
+  height: 30px;
+  background-color: #2eca7f;
+  color: white;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1em;
+}
+.body-projects_bottom-project4-github-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.body-projects_bottom-project4-github:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 .body-projects_bottom-project4:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
@@ -1687,22 +1775,44 @@ h1 {
 .body-projects_bottom-project4:hover::after {
   content: "Project Four";
   font-family: "Montserrat", Helvetica, sans-serif;
-  bottom: -18px;
+  bottom: -58px;
   width: 280px;
   height: 10px;
   position: absolute;
   text-align: center;
 }
 .body-projects_bottom-project5 {
-  height: 280px;
+  height: 200px;
   width: 280px;
   margin: 20px;
+  margin-bottom: 100px;
   border-radius: 1em;
   background-image: url("../assets/projects/p5.jpg");
   background-size: contain;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
   position: relative;
+}
+.body-projects_bottom-project5-github {
+  position: absolute;
+  width: 280px;
+  margin: 0px;
+  height: 30px;
+  background-color: #2eca7f;
+  color: white;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1em;
+}
+.body-projects_bottom-project5-github-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.body-projects_bottom-project5-github:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 .body-projects_bottom-project5:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
@@ -1727,16 +1837,17 @@ h1 {
 .body-projects_bottom-project5:hover::after {
   content: "Project Five";
   font-family: "Montserrat", Helvetica, sans-serif;
-  bottom: -18px;
+  bottom: -58px;
   width: 280px;
   height: 10px;
   position: absolute;
   text-align: center;
 }
 .body-projects_bottom-project6 {
-  height: 280px;
+  height: 200px;
   width: 280px;
   margin: 20px;
+  margin-bottom: 100px;
   border-radius: 1em;
   background-image: url("../assets/projects/p6.jpg");
   background-size: contain;
@@ -1744,6 +1855,27 @@ h1 {
   transition: all 1s ease;
   position: relative;
   cursor: pointer;
+}
+.body-projects_bottom-project6-github {
+  position: absolute;
+  width: 280px;
+  margin: 0px;
+  height: 30px;
+  background-color: #2eca7f;
+  color: white;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1em;
+}
+.body-projects_bottom-project6-github-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.body-projects_bottom-project6-github:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 .body-projects_bottom-project6:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
@@ -1767,7 +1899,7 @@ h1 {
 .body-projects_bottom-project6:hover::after {
   content: "Project Six";
   font-family: "Montserrat", Helvetica, sans-serif;
-  bottom: -18px;
+  bottom: -58px;
   width: 280px;
   height: 10px;
   position: absolute;
@@ -2070,6 +2202,7 @@ h1 {
   border: 0;
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .body-contact_bottom-detail-content-form-button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);

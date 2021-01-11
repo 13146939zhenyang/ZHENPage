@@ -1558,7 +1558,7 @@ h1 {
   width: 280px;
   margin: 0px;
   height: 30px;
-  background: linear-gradient(0.65turn, #f7a854, #ebf8e1, #3f87a6);
+  background: linear-gradient(0.85turn, #f7a854, #ebf8e1, #3f87a6);
   color: black;
   bottom: -40px;
   display: flex;
@@ -2069,7 +2069,7 @@ h1 {
   border: 0;
   margin: 0;
   width: 100%;
-  max-width: 80%;
+  max-width: 100%;
   min-width: 80%;
   max-height: 200px;
   min-height: 100%;

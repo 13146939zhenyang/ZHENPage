@@ -1,14 +1,22 @@
 function home() {
-    document.querySelector('.body-home').style.display = 'block';
-    // document.querySelector('.body-home').style.opacity = '1';
-    document.querySelector('.body-resume').style.display = 'none';
-    // document.querySelector('.body-resume').style.opacity = '0';
-    document.querySelector('.body-projects').style.display = 'none';
-    // document.querySelector('.body-projects').style.opacity = '0';
-    document.querySelector('.body-blog').style.display = 'none';
-    // document.querySelector('.body-blog').style.opacity = '0';
-    document.querySelector('.body-contact').style.display = 'none';
-    // document.querySelector('.body-contact').style.opacity = '0';
+    document.querySelector('.body-home').style.zIndex = '2000';
+    document.querySelector('.body-resume').style.zIndex = '1000';
+    document.querySelector('.body-projects').style.zIndex = '1000';
+    document.querySelector('.body-blog').style.zIndex = '1000';
+    document.querySelector('.body-contact').style.zIndex = '1000';
+    // animation
+    document.querySelector('.body-home').style.opacity = '1';
+    document.querySelector('.body-home').style.animationName = 'homeCome';
+    document.querySelector('.body-home').style.animationDuration = '2s';
+    document.querySelector('.body-resume').style.animationName = 'none';
+    document.querySelector('.body-projects').style.animationName = 'none';
+    document.querySelector('.body-blog').style.animationName = 'none';
+    document.querySelector('.body-contact').style.animationName = 'none';
+    // document.querySelector('.body-home').style.animationIterationCount = 'infinite';
+    document.querySelector('.body-resume').style.opacity = '0';
+    document.querySelector('.body-projects').style.opacity = '0';
+    document.querySelector('.body-blog').style.opacity = '0';
+    document.querySelector('.body-contact').style.opacity = '0';
     document.querySelector('.header-navbar-item-home').style.color = '#595959';
     document.querySelector('.header-navbar-item-home-line').style.opacity = '1';
     document.querySelector('.header-navbar-item-resume').style.color = '#9a9a9a';
@@ -23,16 +31,28 @@ function home() {
 }
 
 function resume() {
-    document.querySelector('.body-home').style.display = 'none';
-    // document.querySelector('.body-home').style.opacity = '0';
-    document.querySelector('.body-resume').style.display = 'block';
-    // document.querySelector('.body-resume').style.opacity = '1';
-    document.querySelector('.body-projects').style.display = 'none';
-    // document.querySelector('.body-projects').style.opacity = '0';
-    document.querySelector('.body-blog').style.display = 'none';
-    // document.querySelector('.body-blog').style.opacity = '0';
-    document.querySelector('.body-contact').style.display = 'none';
-    // document.querySelector('.body-contact').style.opacity = '0';
+    // animation
+    document.querySelector('.body-resume').style.opacity = '1';
+    document.querySelector('.body-resume').style.animationName = 'resumeCome';
+    document.querySelector('.body-resume').style.animationDuration = '2s';
+    document.querySelector('.body-home').style.animationName = 'none';
+    document.querySelector('.body-projects').style.animationName = 'none';
+    document.querySelector('.body-blog').style.animationName = 'none';
+    document.querySelector('.body-contact').style.animationName = 'none';
+
+
+    document.querySelector('.body-home').style.zIndex = '1000';
+    document.querySelector('.body-resume').style.zIndex = '2000';
+    document.querySelector('.body-projects').style.zIndex = '1000';
+    document.querySelector('.body-blog').style.zIndex = '1000';
+    document.querySelector('.body-contact').style.zIndex = '1000';
+
+    document.querySelector('.body-home').style.opacity = '0';
+    document.querySelector('.body-resume').style.opacity = '1';
+    document.querySelector('.body-projects').style.opacity = '0';
+    document.querySelector('.body-blog').style.opacity = '0';
+    document.querySelector('.body-contact').style.opacity = '0';
+
     document.querySelector('.header-navbar-item-home').style.color = '#9a9a9a';
     document.querySelector('.header-navbar-item-home-line').style.opacity = '0';
     document.querySelector('.header-navbar-item-resume').style.color = '#595959';
@@ -46,11 +66,26 @@ function resume() {
 }
 
 function projects() {
-    document.querySelector('.body-home').style.display = 'none';
-    document.querySelector('.body-resume').style.display = 'none';
-    document.querySelector('.body-projects').style.display = 'block';
-    document.querySelector('.body-blog').style.display = 'none';
-    document.querySelector('.body-contact').style.display = 'none';
+    // animation
+    document.querySelector('.body-projects').style.opacity = '1';
+    document.querySelector('.body-projects').style.animationName = 'projectsCome';
+    document.querySelector('.body-projects').style.animationDuration = '2s';
+    document.querySelector('.body-home').style.animationName = 'none';
+    document.querySelector('.body-resume').style.animationName = 'none';
+    document.querySelector('.body-blog').style.animationName = 'none';
+    document.querySelector('.body-contact').style.animationName = 'none';
+
+    document.querySelector('.body-home').style.zIndex = '1000';
+    document.querySelector('.body-resume').style.zIndex = '1000';
+    document.querySelector('.body-projects').style.zIndex = '2000';
+    document.querySelector('.body-blog').style.zIndex = '1000';
+    document.querySelector('.body-contact').style.zIndex = '1000';
+
+    document.querySelector('.body-home').style.opacity = '0';
+    document.querySelector('.body-resume').style.opacity = '0';
+    document.querySelector('.body-projects').style.opacity = '1';
+    document.querySelector('.body-blog').style.opacity = '0';
+    document.querySelector('.body-contact').style.opacity = '0';
     document.querySelector('.header-navbar-item-home').style.color = '#9a9a9a';
     document.querySelector('.header-navbar-item-home-line').style.opacity = '0';
     document.querySelector('.header-navbar-item-resume').style.color = '#9a9a9a';
@@ -64,11 +99,26 @@ function projects() {
 }
 
 function blog() {
-    document.querySelector('.body-home').style.display = 'none';
-    document.querySelector('.body-resume').style.display = 'none';
-    document.querySelector('.body-projects').style.display = 'none';
-    document.querySelector('.body-blog').style.display = 'block';
-    document.querySelector('.body-contact').style.display = 'none';
+    // animation
+    document.querySelector('.body-blog').style.opacity = '1';
+    document.querySelector('.body-blog').style.animationName = 'blogCome';
+    document.querySelector('.body-blog').style.animationDuration = '2s';
+    document.querySelector('.body-home').style.animationName = 'none';
+    document.querySelector('.body-resume').style.animationName = 'none';
+    document.querySelector('.body-projects').style.animationName = 'none';
+    document.querySelector('.body-contact').style.animationName = 'none';
+
+    document.querySelector('.body-home').style.zIndex = '1000';
+    document.querySelector('.body-resume').style.zIndex = '1000';
+    document.querySelector('.body-projects').style.zIndex = '1000';
+    document.querySelector('.body-blog').style.zIndex = '2000';
+    document.querySelector('.body-contact').style.zIndex = '1000';
+
+    document.querySelector('.body-home').style.opacity = '0';
+    document.querySelector('.body-resume').style.opacity = '0';
+    document.querySelector('.body-projects').style.opacity = '0';
+    document.querySelector('.body-blog').style.opacity = '1';
+    document.querySelector('.body-contact').style.opacity = '0';
     document.querySelector('.header-navbar-item-home').style.color = '#9a9a9a';
     document.querySelector('.header-navbar-item-home-line').style.opacity = '0';
     document.querySelector('.header-navbar-item-resume').style.color = '#9a9a9a';
@@ -82,11 +132,27 @@ function blog() {
 }
 
 function contact() {
-    document.querySelector('.body-home').style.display = 'none';
-    document.querySelector('.body-resume').style.display = 'none';
-    document.querySelector('.body-projects').style.display = 'none';
-    document.querySelector('.body-blog').style.display = 'none';
-    document.querySelector('.body-contact').style.display = 'block';
+    // animation
+    document.querySelector('.body-contact').style.opacity = '1';
+    document.querySelector('.body-contact').style.animationName = 'contactCome';
+    document.querySelector('.body-contact').style.animationDuration = '2s';
+    document.querySelector('.body-home').style.animationName = 'none';
+    document.querySelector('.body-resume').style.animationName = 'none';
+    document.querySelector('.body-projects').style.animationName = 'none';
+    document.querySelector('.body-blog').style.animationName = 'none';
+
+
+    document.querySelector('.body-home').style.zIndex = '1000';
+    document.querySelector('.body-resume').style.zIndex = '1000';
+    document.querySelector('.body-projects').style.zIndex = '1000';
+    document.querySelector('.body-blog').style.zIndex = '1000';
+    document.querySelector('.body-contact').style.zIndex = '2000';
+
+    document.querySelector('.body-home').style.opacity = '0';
+    document.querySelector('.body-resume').style.opacity = '0';
+    document.querySelector('.body-projects').style.opacity = '0';
+    document.querySelector('.body-blog').style.opacity = '0';
+    document.querySelector('.body-contact').style.opacity = '1';
     document.querySelector('.header-navbar-item-home').style.color = '#9a9a9a';
     document.querySelector('.header-navbar-item-home-line').style.opacity = '0';
     document.querySelector('.header-navbar-item-resume').style.color = '#9a9a9a';

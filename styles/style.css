@@ -53,6 +53,7 @@ h1 {
   display: flex;
   justify-content: center;
   color: #595959;
+  text-decoration: none;
 }
 .header-navbar-item-home-line {
   width: 24px;
@@ -88,6 +89,7 @@ h1 {
   display: flex;
   justify-content: center;
   color: #9a9a9a;
+  text-decoration: none;
 }
 .header-navbar-item-resume-line {
   width: 24px;
@@ -123,6 +125,7 @@ h1 {
   display: flex;
   justify-content: center;
   color: #9a9a9a;
+  text-decoration: none;
 }
 .header-navbar-item-projects-line {
   width: 24px;
@@ -158,6 +161,7 @@ h1 {
   display: flex;
   justify-content: center;
   color: #9a9a9a;
+  text-decoration: none;
 }
 .header-navbar-item-blog-line {
   width: 24px;
@@ -193,6 +197,7 @@ h1 {
   display: flex;
   justify-content: center;
   color: #9a9a9a;
+  text-decoration: none;
 }
 .header-navbar-item-contact-line {
   width: 24px;
@@ -223,11 +228,16 @@ h1 {
 
 .body {
   display: flex;
-  justify-content: center;
+  position: relative;
 }
 .body-home {
-  transition: width 2s;
-  display: block;
+  z-index: 1000;
+  opacity: 1;
+  transition: all 2s ease;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
   width: 1035px;
   border-radius: 1em;
   overflow: hidden;
@@ -398,9 +408,13 @@ h1 {
   color: #2eca7f;
 }
 .body-resume {
-  transition: width 2s;
-  display: none;
+  opacity: 0;
+  transition: all 2s ease;
   width: 1035px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
@@ -1495,13 +1509,16 @@ h1 {
   text-align: center;
 }
 .body-projects {
-  transition: width 2s;
-  display: none;
+  opacity: 0;
+  transition: all 2s ease;
   width: 1035px;
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
 .body-projects_top {
   height: 125px;
@@ -1914,11 +1931,15 @@ h1 {
   text-align: center;
 }
 .body-blog {
-  transition: width 2s;
-  display: none;
+  opacity: 0;
+  transition: all 2s ease;
   width: 1035px;
   border-radius: 1em;
   overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
 }
@@ -1966,11 +1987,15 @@ h1 {
   font-size: 50px;
 }
 .body-contact {
-  transition: width 2s;
-  display: none;
+  opacity: 0;
+  transition: all 2s ease;
   width: 1035px;
   border-radius: 1em;
   overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
 }
 .body-contact_top {
@@ -2217,6 +2242,85 @@ h1 {
 .body-contact_bottom-detail-content-form-button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+@keyframes homeCome {
+  from {
+    width: 103.5px;
+    height: 57px;
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  to {
+    width: 1035px;
+    height: 570px;
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes resumeCome {
+  from {
+    width: 103.5px;
+    height: 155px;
+    transform: rotateY(180deg);
+    margin-right: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 1035px;
+    height: 1550px;
+    transform: rotateY(0deg);
+    margin-right: 20%;
+    opacity: 1;
+  }
+}
+@keyframes projectsCome {
+  from {
+    width: 103.5px;
+    height: 88px;
+    transform: rotateY(180deg);
+    margin-right: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 1035px;
+    height: 880px;
+    transform: rotateY(0deg);
+    margin-right: 20%;
+    opacity: 1;
+  }
+}
+@keyframes blogCome {
+  from {
+    width: 103.5px;
+    height: 28.5px;
+    transform: rotateY(180deg);
+    margin-right: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 1035px;
+    height: 285px;
+    transform: rotateY(0deg);
+    margin-right: 20%;
+    opacity: 1;
+  }
+}
+@keyframes contactCome {
+  from {
+    width: 103.5px;
+    height: 69px;
+    transform: rotateY(180deg);
+    margin-right: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 1035px;
+    height: 690px;
+    transform: rotateY(0deg);
+    margin-right: 20%;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

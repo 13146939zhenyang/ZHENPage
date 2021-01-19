@@ -247,7 +247,7 @@ h1 {
         z-index: 1000;
         opacity: 1;
         // display: block;
-        transition: all 2s ease;
+        transition: all 0.2s ease;
         position: absolute;
         left: 0px;
         right: 0px;
@@ -432,7 +432,7 @@ h1 {
     }
     &-resume {
         opacity: 0;
-        transition: all 2s ease;
+        transition: all 0.2s ease;
         width: 1035px;
         position: absolute;
         left: 0px;
@@ -1567,7 +1567,7 @@ h1 {
     }
     &-projects {
         opacity: 0;
-        transition: all 2s ease;
+        transition: all 0.2s ease;
         // height: 725px;
         width: 1035px;
         // background-color: red;
@@ -2011,7 +2011,7 @@ h1 {
     }
     &-blog {
         opacity: 0;
-        transition: all 2s ease;
+        transition: all 0.2s ease;
         width: 1035px;
         border-radius: 1em;
         overflow: hidden;
@@ -2075,7 +2075,7 @@ h1 {
     }
     &-contact {
         opacity: 0;
-        transition: all 2s ease;
+        transition: all 0.2s ease;
         // height: 570px;
         width: 1035px;
         border-radius: 1em;
@@ -2370,87 +2370,13 @@ h1 {
     }
 }
 
-@keyframes homeCome {
+@keyframes pageCome {
     from {
-        width: 103.5px;
-        height: 57px;
-        transform: rotateY(180deg);
-        // margin-right: auto-20px;
-        opacity: 0;
+        transform: rotateY(180deg) scale(0.2);
+        // transform: translateX(100px);
     }
     to {
-        width: 1035px;
-        height: 570px;
-        transform: rotateY(0deg);
-        // margin-right: auto;
-        opacity: 1;
-    }
-}
-
-@keyframes resumeCome {
-    from {
-        width: 103.5px;
-        height: 155px;
-        transform: rotateY(180deg);
-        margin-right: 0px;
-        opacity: 0;
-    }
-    to {
-        width: 1035px;
-        height: 1550px;
-        transform: rotateY(0deg);
-        margin-right: 20%;
-        opacity: 1;
-    }
-}
-
-@keyframes projectsCome {
-    from {
-        width: 103.5px;
-        height: 88px;
-        transform: rotateY(180deg);
-        margin-right: 0px;
-        opacity: 0;
-    }
-    to {
-        width: 1035px;
-        height: 880px;
-        transform: rotateY(0deg);
-        margin-right: 20%;
-        opacity: 1;
-    }
-}
-
-@keyframes blogCome {
-    from {
-        width: 103.5px;
-        height: 28.5px;
-        transform: rotateY(180deg);
-        margin-right: 0px;
-        opacity: 0;
-    }
-    to {
-        width: 1035px;
-        height: 285px;
-        transform: rotateY(0deg);
-        margin-right: 20%;
-        opacity: 1;
-    }
-}
-
-@keyframes contactCome {
-    from {
-        width: 103.5px;
-        height: 69px;
-        transform: rotateY(180deg);
-        margin-right: 0px;
-        opacity: 0;
-    }
-    to {
-        width: 1035px;
-        height: 690px;
-        transform: rotateY(0deg);
-        margin-right: 20%;
-        opacity: 1;
+        transform: rotateY(0deg) scale(1);
+        // transform: translateX(500px);
     }
 }

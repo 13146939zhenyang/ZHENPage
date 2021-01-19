@@ -6,8 +6,8 @@ function home() {
     document.querySelector('.body-contact').style.zIndex = '1000';
     // animation
     document.querySelector('.body-home').style.opacity = '1';
-    document.querySelector('.body-home').style.animationName = 'homeCome';
-    document.querySelector('.body-home').style.animationDuration = '2s';
+    document.querySelector('.body-home').style.animationName = 'pageCome';
+    document.querySelector('.body-home').style.animationDuration = '1s';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
     document.querySelector('.body-blog').style.animationName = 'none';
@@ -33,8 +33,8 @@ function home() {
 function resume() {
     // animation
     document.querySelector('.body-resume').style.opacity = '1';
-    document.querySelector('.body-resume').style.animationName = 'resumeCome';
-    document.querySelector('.body-resume').style.animationDuration = '2s';
+    document.querySelector('.body-resume').style.animationName = 'pageCome';
+    document.querySelector('.body-resume').style.animationDuration = '1s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
     document.querySelector('.body-blog').style.animationName = 'none';
@@ -68,8 +68,8 @@ function resume() {
 function projects() {
     // animation
     document.querySelector('.body-projects').style.opacity = '1';
-    document.querySelector('.body-projects').style.animationName = 'projectsCome';
-    document.querySelector('.body-projects').style.animationDuration = '2s';
+    document.querySelector('.body-projects').style.animationName = 'pageCome';
+    document.querySelector('.body-projects').style.animationDuration = '1s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-blog').style.animationName = 'none';
@@ -101,8 +101,8 @@ function projects() {
 function blog() {
     // animation
     document.querySelector('.body-blog').style.opacity = '1';
-    document.querySelector('.body-blog').style.animationName = 'blogCome';
-    document.querySelector('.body-blog').style.animationDuration = '2s';
+    document.querySelector('.body-blog').style.animationName = 'pageCome';
+    document.querySelector('.body-blog').style.animationDuration = '1s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
@@ -134,8 +134,8 @@ function blog() {
 function contact() {
     // animation
     document.querySelector('.body-contact').style.opacity = '1';
-    document.querySelector('.body-contact').style.animationName = 'contactCome';
-    document.querySelector('.body-contact').style.animationDuration = '2s';
+    document.querySelector('.body-contact').style.animationName = 'pageCome';
+    document.querySelector('.body-contact').style.animationDuration = '1s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
@@ -169,6 +169,12 @@ function moveName() {
     document.querySelector('.body-contact_bottom-detail-content-form-detail-text-placeholderName').style.top = '-10px';
     document.querySelector('.body-contact_bottom-detail-content-form-detail-text-placeholderName').style.left = '5px';
     document.querySelector('.body-contact_bottom-detail-content-form-detail-text-placeholderName').style.fontSize = '12px';
+}
+
+function movePlaceholderName(name) {
+    document.querySelector(name).style.top = '-10px';
+    document.querySelector(name).style.left = '5px';
+    document.querySelector(name).style.fontSize = '12px';
 }
 
 function moveEmail() {

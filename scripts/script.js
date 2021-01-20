@@ -7,7 +7,7 @@ function home() {
     // animation
     document.querySelector('.body-home').style.opacity = '1';
     document.querySelector('.body-home').style.animationName = 'pageCome';
-    document.querySelector('.body-home').style.animationDuration = '1s';
+    document.querySelector('.body-home').style.animationDuration = '1.5s';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
     document.querySelector('.body-blog').style.animationName = 'none';
@@ -34,7 +34,7 @@ function resume() {
     // animation
     document.querySelector('.body-resume').style.opacity = '1';
     document.querySelector('.body-resume').style.animationName = 'pageCome';
-    document.querySelector('.body-resume').style.animationDuration = '1s';
+    document.querySelector('.body-resume').style.animationDuration = '1.5s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
     document.querySelector('.body-blog').style.animationName = 'none';
@@ -69,7 +69,7 @@ function projects() {
     // animation
     document.querySelector('.body-projects').style.opacity = '1';
     document.querySelector('.body-projects').style.animationName = 'pageCome';
-    document.querySelector('.body-projects').style.animationDuration = '1s';
+    document.querySelector('.body-projects').style.animationDuration = '1.5s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-blog').style.animationName = 'none';
@@ -102,7 +102,7 @@ function blog() {
     // animation
     document.querySelector('.body-blog').style.opacity = '1';
     document.querySelector('.body-blog').style.animationName = 'pageCome';
-    document.querySelector('.body-blog').style.animationDuration = '1s';
+    document.querySelector('.body-blog').style.animationDuration = '1.5s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';
@@ -135,7 +135,7 @@ function contact() {
     // animation
     document.querySelector('.body-contact').style.opacity = '1';
     document.querySelector('.body-contact').style.animationName = 'pageCome';
-    document.querySelector('.body-contact').style.animationDuration = '1s';
+    document.querySelector('.body-contact').style.animationDuration = '1.5s';
     document.querySelector('.body-home').style.animationName = 'none';
     document.querySelector('.body-resume').style.animationName = 'none';
     document.querySelector('.body-projects').style.animationName = 'none';

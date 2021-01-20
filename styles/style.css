@@ -229,8 +229,10 @@ h1 {
 .body {
   display: flex;
   position: relative;
+  perspective: 800px;
 }
 .body-home {
+  transform-origin: right 0px -1000px;
   z-index: 1000;
   opacity: 1;
   transition: all 0.2s ease;
@@ -408,6 +410,7 @@ h1 {
   color: #2eca7f;
 }
 .body-resume {
+  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -1509,6 +1512,7 @@ h1 {
   text-align: center;
 }
 .body-projects {
+  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -1931,6 +1935,7 @@ h1 {
   text-align: center;
 }
 .body-blog {
+  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -1987,6 +1992,7 @@ h1 {
   font-size: 50px;
 }
 .body-contact {
+  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -2246,10 +2252,10 @@ h1 {
 
 @keyframes pageCome {
   from {
-    transform: rotateY(180deg) scale(0.2);
+    transform: translateX(1000px) translateY(50vh) rotateY(180deg) scale(0.2);
   }
   to {
-    transform: rotateY(0deg) scale(1);
+    transform: translateX(0px) translateY(0px) rotateY(0deg) scale(1);
   }
 }
 

@@ -232,7 +232,6 @@ h1 {
   perspective: 800px;
 }
 .body-home {
-  transform-origin: right 0px -1000px;
   z-index: 1000;
   opacity: 1;
   transition: all 0.2s ease;
@@ -410,7 +409,6 @@ h1 {
   color: #2eca7f;
 }
 .body-resume {
-  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -1512,7 +1510,6 @@ h1 {
   text-align: center;
 }
 .body-projects {
-  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -1935,7 +1932,6 @@ h1 {
   text-align: center;
 }
 .body-blog {
-  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -1992,7 +1988,6 @@ h1 {
   font-size: 50px;
 }
 .body-contact {
-  transform-origin: right 0px -1000px;
   opacity: 0;
   transition: all 0.2s ease;
   width: 1035px;
@@ -2252,10 +2247,24 @@ h1 {
 
 @keyframes pageCome {
   from {
-    transform: translateX(1000px) translateY(50vh) rotateY(180deg) scale(0.2);
+    transform-origin: right 0px -2000px;
+    transform: translateX(10vw) translateY(50vh) rotateY(180deg) scale(0.6);
   }
   to {
+    transform-origin: right 0px -2000px;
     transform: translateX(0px) translateY(0px) rotateY(0deg) scale(1);
+  }
+}
+@keyframes pageGo {
+  from {
+    transform-origin: right 0px -2000px;
+    transform: translateX(0px) translateY(0px) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform-origin: right 0px -2000px;
+    transform: translateX(-10vw) translateY(20vh) rotateY(-90deg) scale(0.6);
+    opacity: 0;
   }
 }
 

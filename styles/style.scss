@@ -274,7 +274,7 @@ h1 {
                 position: absolute;
                 top: 50px;
                 left: 50px;
-                background-image: url(../assets/photo.png);
+                background-image: url(../assets/photo_yang.png);
                 // background-image: url(../assets/stock-photo-108706097.jpg);
                 border: 5px solid white;
                 background-size: cover;
@@ -569,9 +569,13 @@ h1 {
                             }
                             &_detail {
                                 margin: 0px;
+                                height: 55px;
+                                width: 400px;
                                 font-size: 15px;
                                 margin: 10px 0px 0px 20px;
                                 line-height: 1.5em;
+                                overflow: scroll;
+                                box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
                             }
                         }
                     }
@@ -798,6 +802,58 @@ h1 {
                                 }
                                 &::after {
                                     content: "Git";
+                                    position: absolute;
+                                    width: 70px;
+                                    bottom: -20px;
+                                    left: -10px;
+                                    margin: 0px;
+                                    font-size: 12px;
+                                    text-align: center;
+                                }
+                            }
+                            &-jira {
+                                height: 50px;
+                                width: 50px;
+                                background-color: white;
+                                background-image: url('../assets/front-end/jira.png');
+                                background-size: contain;
+                                background-position: center;
+                                margin: 20px;
+                                border-radius: 1em;
+                                position: relative;
+                                font-family: 'Montserrat', Helvetica, sans-serif;
+                                box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+                                &:hover {
+                                    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+                                }
+                                &::after {
+                                    content: "Jira";
+                                    position: absolute;
+                                    width: 70px;
+                                    bottom: -20px;
+                                    left: -10px;
+                                    margin: 0px;
+                                    font-size: 12px;
+                                    text-align: center;
+                                }
+                            }
+                            &-bitbucket {
+                                height: 50px;
+                                width: 50px;
+                                background-color: white;
+                                background-image: url('../assets/tools/bitbucket.png');
+                                background-size: contain;
+                                background-position: center;
+                                margin: 20px;
+                                border-radius: 1em;
+                                position: relative;
+                                font-family: 'Montserrat', Helvetica, sans-serif;
+                                box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+                                &:hover {
+                                    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+                                }
+                                &::after {
+                                    content: "Bitbucket";
                                     position: absolute;
                                     width: 70px;
                                     bottom: -20px;

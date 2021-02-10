@@ -259,7 +259,7 @@ h1 {
   position: absolute;
   top: 50px;
   left: 50px;
-  background-image: url(../assets/photo.png);
+  background-image: url(../assets/photo_yang.png);
   border: 5px solid white;
   background-size: cover;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
@@ -538,9 +538,13 @@ h1 {
 }
 .body-resume_bottom-content-education-progress-element_detail {
   margin: 0px;
+  height: 55px;
+  width: 400px;
   font-size: 15px;
   margin: 10px 0px 0px 20px;
   line-height: 1.5em;
+  overflow: scroll;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .body-resume_bottom-content-experience {
   width: 475px;
@@ -746,6 +750,58 @@ h1 {
 }
 .body-resume_bottom-content-graph-content-tools-git::after {
   content: "Git";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-jira {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/front-end/jira.png");
+  background-size: contain;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-jira:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-jira::after {
+  content: "Jira";
+  position: absolute;
+  width: 70px;
+  bottom: -20px;
+  left: -10px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.body-resume_bottom-content-graph-content-tools-bitbucket {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-image: url("../assets/tools/bitbucket.png");
+  background-size: contain;
+  background-position: center;
+  margin: 20px;
+  border-radius: 1em;
+  position: relative;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-bitbucket:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.body-resume_bottom-content-graph-content-tools-bitbucket::after {
+  content: "Bitbucket";
   position: absolute;
   width: 70px;
   bottom: -20px;
